@@ -4,7 +4,7 @@
   <url>
     <loc>http://example.com/2023/12/03/linearlist/</loc>
     
-    <lastmod>2023-12-03</lastmod>
+    <lastmod>2023-12-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +13,7 @@
   <url>
     <loc>http://example.com/2023/10/22/test_blog/</loc>
     
-    <lastmod>2023-10-22</lastmod>
+    <lastmod>2023-12-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -38,5 +38,12 @@
 
   
 
+  
+  <url>
+    <loc>http://example.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2023-12-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>
