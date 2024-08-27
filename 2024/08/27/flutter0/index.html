@@ -26,7 +26,7 @@
 <meta property="og:description" content="引言之前对安卓开发有点感兴趣，想搓一个玩具出来看看，但是试过jetpack compose之后还是放弃了（虽然Kotlin是很优秀的语言）,鉴于JVM系列繁琐的依赖管理和混乱的文档，我把目光放到了跨平台框架Flutter上   环境配置 首先先上官网下载 Flutter,里面已经内嵌了 Dart 的 SDK，不用额外下载。对于国内的网络环境，可以参考以下指导 如果你的第一个项目也是 Android">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-08-27T11:12:51.622Z">
-<meta property="article:modified_time" content="2024-08-27T12:09:43.515Z">
+<meta property="article:modified_time" content="2024-08-27T12:19:17.713Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -361,7 +361,7 @@
 <figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppRoute</span> </span>&#123;<br>  <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> pages = [<br>    GetPage(name: <span class="hljs-string">&quot;/&quot;</span>, page: () =&gt; <span class="hljs-keyword">const</span> MusicListPage()),<br>    GetPage(name: <span class="hljs-string">&quot;/music/musicId&quot;</span>, page: () =&gt; <span class="hljs-keyword">const</span> MusicDetailPage()),<br>  ];<br>&#125;<br></code></pre></td></tr></table></figure>
 <p>main.dart</p>
 <figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyApp</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">StatelessWidget</span> </span>&#123;<br>  <span class="hljs-keyword">const</span> MyApp(&#123;<span class="hljs-keyword">super</span>.key&#125;);<br>  <span class="hljs-meta">@override</span><br>  Widget build(BuildContext context) &#123;<br>    <span class="hljs-keyword">return</span> GetMaterialApp(<br>      title: <span class="hljs-string">&#x27;Flutter Demo&#x27;</span>,<br>      theme: ThemeData(<br>        colorScheme: ColorScheme.fromSeed(<br>            seedColor: <span class="hljs-keyword">const</span> Color.fromARGB(<span class="hljs-number">255</span>, <span class="hljs-number">43</span>, <span class="hljs-number">184</span>, <span class="hljs-number">104</span>)),<br>        useMaterial3: <span class="hljs-keyword">true</span>,<br>      ),<br>      initialRoute: <span class="hljs-string">&quot;/&quot;</span>,<br>      getPages: AppRoute.pages,<br>    );<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>基础的部分大概就是这么多啦，后面可能会介绍一下其他控件的使用<br>P.S. 会有第二篇吗？。。。  </p>
+<p>基础的部分大概就是这么多啦，后面可能会介绍一下其他控件的使用<br>P.S.<br>会有第二篇吗？……<br>会有的！</p>
 
                 
               </div>
